@@ -4,6 +4,7 @@ namespace Dapper.Tests.Performance
 {
     [ServiceStack.DataAnnotations.Alias("Posts")]
     [LinqToDB.Mapping.Table(Name = "Posts")]
+    [FluentCommand.GenerateDataReader]
     public class Post
     {
         [LinqToDB.Mapping.PrimaryKey, LinqToDB.Mapping.Identity]
